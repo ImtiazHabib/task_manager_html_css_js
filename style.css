@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+h1,h2,h3,h4,h5{
+   font-family: "Poppins", sans-serif;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.completed{
+    text-decoration: line-through !important;
+}
+/* Project Start  */
+/* header section start  */
+.header_section{
+  background-color: #FFD8D8;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+.header_section .page_title h1{
+    color: #093FB4;
+}
+/* header section end  */
+
+/* main section start  */
+.main_section{
+width: 100%;
+    padding: 50px;
+    background-color: #FFFCFB;
+}
+.main_section .main_section_body{
+    margin-bottom: 34px;
+    padding: 20px;
+    border: solid 2px #093FB4;
+}
+.main_section .main_section_body .form-label{
+        font-size: 19px;
+    font-weight: 700;
+    color: #273F4F;
+}
+.main_section .main_section_body .form-control{
+        color: white;
+    background: black;
+}
+.main_section .main_section_body .form-text{
+    color: red;
+}
+
+/* main section end  */
+/* Project End  */
