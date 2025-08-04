@@ -74,10 +74,10 @@ function todo_update(index){
 }
 
 // Add a new todo
-function add_todo(todotext) {
-  if (todotext.trim() === ""){
+function add_todo(todotext,user_text) {
+  if (user_text.trim() === ""){
     alert("Please Write  Something\n");
-    return 0;
+    return ;
   }
   todos.push(todotext.trim());
   get_todos();
@@ -87,10 +87,11 @@ function add_todo(todotext) {
 // Listen for form submit event
 todo_form.addEventListener('submit', function (e) {
   e.preventDefault();
+  
   total_task_count++;
   let user_value_with_number=`${total_task_count} -- ${user_input.value}`;
   check_total();
-  add_todo(user_value_with_number);
+  add_todo(user_value_with_number,user_input.value);
 });
 
 
